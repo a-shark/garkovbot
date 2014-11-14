@@ -1,0 +1,48 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    crass (0.2.1)
+    engtagger (0.2.0)
+    formatador (0.2.5)
+    google (1.0.10)
+      formatador (~> 0.2)
+      htmlentities (~> 4)
+      json (~> 1)
+      ruby-readability (~> 0.5)
+      trollop (~> 1)
+    google-search (1.0.3)
+      json
+    guess_html_encoding (0.0.9)
+    htmlentities (4.3.2)
+    irc (0.0.4)
+      serialport (~> 1.1.0)
+    json (1.8.1)
+    marky_markov (0.3.5)
+      msgpack
+    mini_portile (0.6.1)
+    msgpack (0.5.9)
+    nokogiri (1.6.4.1)
+      mini_portile (~> 0.6.0)
+    nokogumbo (1.1.12)
+      nokogiri
+    ruby-readability (0.7.0)
+      guess_html_encoding (>= 0.0.4)
+      nokogiri (>= 1.6.0)
+    sanitize (3.0.3)
+      crass (~> 0.2.0)
+      nokogiri (>= 1.4.4)
+      nokogumbo (= 1.1.12)
+    serialport (1.1.0)
+    trollop (1.16.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  engtagger
+  google
+  google-search
+  irc
+  marky_markov
+  ruby-readability
+  sanitize
