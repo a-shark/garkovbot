@@ -8,7 +8,6 @@ require 'marky_markov'
 require 'sanitize'
 require 'irc'
 
-MYNAME = "garkovbot"
 NUM_RESULTS = 5
 #CHANNEL = "#r/KansasCity"
 CHANNEL = "#garkov-bot"
@@ -16,8 +15,6 @@ SERVER = "chat.freenode.net"
 NICK = "garkovbot"
 
 def get_response (message)
-#  if message.start_with?(MYNAME + ':')
-    message.slice!(MYNAME + ':')
     nouns = []
     verbs = []
     search_words = []
@@ -53,12 +50,7 @@ def get_response (message)
     response = markov.generate_n_sentences 1
     
     return response
-#  end
 end
-
-#while 1
-#  puts get_response(MYNAME + ':' + msg)
-#end
 
 host SERVER
 port 6666
